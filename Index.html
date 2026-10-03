@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Pigu ♡</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fff7f9;
+  color: #4c3038;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  background:
+    radial-gradient(circle at 15% 20%, #ffdce6, transparent 32%),
+    radial-gradient(circle at 85% 80%, #f8d8df, transparent 30%),
+    linear-gradient(135deg, #fffafa, #fdecef);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tiny {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #a66c79;
+}
+
+h1 {
+  font-size: clamp(65px, 17vw, 120px);
+  font-weight: 500;
+  margin: 15px 0;
+  color: #6e3e4a;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 520px;
+  margin: auto;
+}
+
+button {
+  border: none;
+  background: #6e3e4a;
+  color: white;
+  border-radius: 50px;
+  padding: 15px 27px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 25px;
+  box-shadow: 0 10px 30px #6e3e4a30;
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section {
+  max-width: 850px;
+  margin: auto;
+  padding: 80px 22px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+/* PHOTO */
+
+.photo-frame {
+  background: white;
+  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 0 18px 45px #70424e20;
+  transform: rotate(-1deg);
+}
+
+.photo-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+/* LETTER */
+
+.letter {
+  background: white;
+  border-radius: 25px;
+  padding: 32px;
+  line-height: 1.9;
+  font-size: 17px;
+  box-shadow: 0 15px 40px #70424e18;
+}
+
+.center {
+  text-align: center;
+}
+
+.big-heart {
+  font-size: 42px;
+  margin: 40px 0 10px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+  position: fixed;
+  bottom: -50px;
+  pointer-events: none;
+  animation: floatUp 5s linear forwards;
+  z-index: 99;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(0);
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-110vh) rotate(30deg);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 50px 20px 80px;
+  color: #9b6975;
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+  .section {
+    padding: 60px 18px;
+  }
+
+  .letter {
+    padding: 24px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="tiny">
+      a little something for
+    </div>
+
+    <h1>Pigu ♡</h1>
+
+    <p class="subtitle">
+      If I could put everything I feel into one little
+      corner of the internet… it would be this.
+    </p>
+
+    <button onclick="document.getElementById('letter').scrollIntoView()">
+      Open your little surprise ♡
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PHOTO -->
+
+<section class="section">
+
+  <div class="photo-frame">
+
+    <img src="photo.jpg" alt="Us ♡">
+
+  </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section class="section" id="letter">
+
+  <h2>
+    For you, Pigu ♡
+  </h2>
+
+  <div class="letter">
+
+    <p>
+      Happy Boyfriend’s Day, Pigu. ♡
+    </p>
+
+    <p>
+      I don't think one website could ever fit everything
+      I want to say, but I still wanted to make this little
+      place just for you.
+    </p>
+
+    <p>
+      Thank you for being someone who can make ordinary
+      moments feel special. Thank you for the laughs,
+      random conversations, little things and all the moments
+      that become special simply because they happened with you.
+    </p>
+
+    <p>
+      Sometimes I may not say everything perfectly,
+      but please know that you matter to me more than
+      a simple message could explain.
+    </p>
+
+    <p>
+      I hope whenever you look at this, you remember that
+      there is someone who cares about you and is genuinely
+      happy to have you in her life.
+    </p>
+
+    <p>
+      So this is your tiny corner of the internet —
+      made especially for you, with a whole lot of love
+      tucked into it.
+    </p>
+
+    <p>
+      Happy Boyfriend’s Day, Pigu. ♡
+    </p>
+
+  </div>
+
+  <div class="center">
+
+    <div class="big-heart">
+      ♡
+    </div>
+
+    <button onclick="makeHearts()">
+      Tap me ♡
+    </button>
+
+  </div>
+
+</section>
+
+
+<footer>
+  made with love, just for Pigu ♡
+</footer>
+
+
+<script>
+
+function makeHearts() {
+
+  for (let i = 0; i < 20; i++) {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+      ["♡", "♥", "✦", "♡"][Math.floor(Math.random() * 4)];
+
+    heart.style.left =
+      Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+      (16 + Math.random() * 25) + "px";
+
+    heart.style.animationDuration =
+      (3 + Math.random() * 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6500);
+  }
+
+}
+
+</script>
+
+</body>
+  </html>
